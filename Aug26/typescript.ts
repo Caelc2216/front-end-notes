@@ -23,3 +23,4 @@ const add2 = (a: number, b: number): number => {return a + b}; // This is an arr
 function add3(...numbers: number[]): number { // This is a function with rest parameter
     return numbers.reduce((acc, curr) => acc + curr, 0);
 }
+

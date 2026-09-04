@@ -20,8 +20,16 @@ for (let number of scores) {
     doubled.push(number * 2);
 }
 let mappedDouble = scores.map(number => number * 2);
-let mappedDouble2 = scores.map(number => `Number: ${number}`);
-for (const name of mappedDouble2) {
+let mappedString = scores.map(number => `Number: ${number}`);
+for (const name of mappedString) {
     console.log(name);
 }
+const student = {
+    name: "bob",
+    grade: 85,
+    active: true,
+};
+console.log(student.name);
+console.log(student.grade);
+console.log(student.active);
 //# sourceMappingURL=index.js.map

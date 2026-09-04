@@ -33,3 +33,25 @@ let mappedString:string[] = scores.map(number=> `Number: ${number}`);
 for (const name of mappedString){
     console.log(name)
 }
+
+interface Test{
+    name:string,
+    grade:number;
+    active?:boolean
+}
+
+const student:Test = {
+    name: "bob",
+    grade: 85,
+    active: true,
+}
+
+const teacher:Test = {
+    name: "bob",
+    grade: 85,
+    active: true,
+}
+
+console.log(student.name)
+console.log(student.grade)
+console.log(student.active) 

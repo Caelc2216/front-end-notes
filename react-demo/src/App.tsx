@@ -1,3 +1,7 @@
+import { StrictMode } from "react";
+import Monster from "./components/Monster";
+import { Monster2 } from "./components/Monster";
+
 
 
 function App() {
@@ -9,6 +13,7 @@ function App() {
   function makeUpperCase(text: string): string {
     return text.toUpperCase();
   }
+
 
   return (
 
@@ -23,9 +28,23 @@ function App() {
       <h1>Hello {makeUpperCase(name)} {3 + 4} </h1>
       <p>Age: {age}</p>
       <p>Teacher: {teacher ? "yes" : "no"}</p>
+      <br></br>
+      <Monster
+        name="Goblin"
+        health={30}
+        damage={14}
+        boss={false}
+      />
+      <br></br>
+      <Monster2
+        name="Dragon"
+        health={300}
+        damage={1400}
+        boss={true}
+      />
     </>
   );
 }
 // tsc -> jsx -> html(formal)
 
-export default App
+export default App;

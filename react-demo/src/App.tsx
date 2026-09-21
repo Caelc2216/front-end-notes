@@ -1,7 +1,7 @@
 import { StrictMode } from "react";
 import Monster from "./components/Monster";
 import { Monster2 } from "./components/Monster";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 
 
@@ -32,13 +32,15 @@ function App() {
     setHealth(0);
   }
 
-
+  useEffect(() => {
+    console.log("HEALTH EFFECT RAN")
+  }, [health])
   return (
 
     <>
       <img src={imageURL} />
       <button onClick={() =>
-        alert("What a save!")}>
+        alert("What a save!")} style={{borderRadius:15, backgroundColor: "#e68a00" }}>
         You know what to do
       </button>
 
@@ -68,10 +70,10 @@ function App() {
       <br></br>
       <h1>Health: {health}</h1>
       <div>
-        <button onClick={increaseCount}>increase</button>
-        <button onClick={decreaseCount}>decrease</button>
-        <button onClick={resetCount}>reset</button>
-        <button onClick={()=>setHealth(health + 10)}>increase by 10</button>
+        <button onClick={increaseCount} style={{margin:10}}>increase</button>
+        <button onClick={decreaseCount} style={{margin:10}}>decrease</button>
+        <button onClick={resetCount} style={{margin:10}}>reset</button>
+        <button onClick={()=>setHealth(health + 10)} style={{margin:10}}>increase by 10</button>
       </div>
       <br></br>
       <input onChange={(event) => setName2(event.target.value)} placeholder="Name">

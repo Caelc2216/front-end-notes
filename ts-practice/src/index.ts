@@ -55,3 +55,42 @@ const teacher:Test = {
 console.log(student.name)
 console.log(student.grade)
 console.log(student.active) 
+
+type Box<T> = {
+    value: T;
+}
+
+const stringBox: Box<string>={
+    value:"cat"
+}
+
+const intBox: Box<number>={
+    value:42
+}
+
+document.querySelector<HTMLButtonElement>("#submit");
+
+class Animal{
+    name:string;
+
+    constructor(name: string){
+        this.name = name;
+    }
+
+    speak(){
+        console.log(`${this.name} makes a sound`);
+    }
+}
+
+const cat = new Animal("meoqsmaz");
+cat.speak();
+
+class Dog extends Animal{
+    fetch(){
+        console.log("dog plays fetch")
+    }
+}
+
+const dog = new Dog("bow wow");
+dog.fetch();
+dog.speak();

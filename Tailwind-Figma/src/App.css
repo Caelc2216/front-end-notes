@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+.profileCard {
+  width: 25rem;
+  height: 21.25rem;
+}

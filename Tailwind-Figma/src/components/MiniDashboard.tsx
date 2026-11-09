@@ -3,7 +3,7 @@ export default function MiniDashboard() {
     return (
         <>
             <div className="txt-8 flex flex-wrap items-center">
-                
+
             </div>
         </>
 
@@ -17,3 +17,7 @@ export default function MiniDashboard() {
         // </section>
     )
 }
+
+<div className="my-class">
+    
+</div>

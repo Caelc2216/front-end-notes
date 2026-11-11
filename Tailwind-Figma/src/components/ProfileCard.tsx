@@ -21,7 +21,7 @@ export default function ProfileCard() {
             </div>
             <div className="p-4 ">
                 <div className="flex border-t-1 border-[#E2E8F0] justify-between pt-4 items-center flex-wrap">
-                    <button className="w-[48%] bg-[#234E70] p-3 text-white rounded-[0.70rem]">View Profile</button>
+                    <button className="w-[48%] bg-[var(--company-primary)] p-3 text-white rounded-[0.70rem]">View Profile</button>
                     <button className="w-[48%] border-1 border-[#CBD5E1] p-3 rounded-[0.7rem]">Message</button>
                 </div>
             </div>

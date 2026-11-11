@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+:root {
+  --company-primary: #234e70;
+}
+
 .profileCard {
   width: 25rem;
 }

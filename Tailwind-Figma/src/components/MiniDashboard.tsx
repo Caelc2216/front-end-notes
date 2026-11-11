@@ -3,7 +3,8 @@ export default function MiniDashboard() {
     return (
         <>
             <div className="txt-8 flex flex-wrap items-center">
-
+                <h1 className="font-bold justify-content-start">Dashboard</h1>
+                <button className="">+ New Project</button>
             </div>
         </>
 
